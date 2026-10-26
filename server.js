@@ -2,20 +2,21 @@
 
 // set up ======================================================================
 // get all the tools we need
-const express  = require('express');
-const app      = express();
-const port     = process.env.PORT || 8080;
+let express  = require('express');
+let app      = express(); //calling on express stored in line 5
+let port     = process.env.PORT || 8080; //first arg looks for an env (environment) file saved in another foler
 const MongoClient = require('mongodb').MongoClient
-const mongoose = require('mongoose');
-const passport = require('passport');
-const flash    = require('connect-flash');
+const { ObjectID } = require('mongodb')
+let mongoose = require('mongoose');
+let passport = require('passport');
+let flash    = require('connect-flash');
 
-const morgan       = require('morgan');
-const cookieParser = require('cookie-parser');
-const bodyParser   = require('body-parser');
-const session      = require('express-session');
+let morgan       = require('morgan');
+let cookieParser = require('cookie-parser');
+let bodyParser   = require('body-parser');
+let session      = require('express-session');
 
-const configDB = require('./config/database.js');
+let configDB = require('./config/database.js');
 
 let db
 
@@ -23,7 +24,7 @@ let db
 mongoose.connect(configDB.url, (err, database) => {
   if (err) return console.log(err)
   db = database
-  require('./app/routes.js')(app, passport, db);
+  require('./app/routes.js')(app, passport, db, ObjectID);
 }); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
