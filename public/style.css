@@ -96,3 +96,10 @@ button {
     margin: 0;
     text-align: center;
 }
+
+.recipe-name {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}

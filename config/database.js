@@ -2,8 +2,8 @@
 // config/database.js
 module.exports = {
 
-    'url' : 'mongodb+srv://minayachanely_db_user:jtrt2sl2afrR33a9@cluster0.hbaxhzy.mongodb.net/recipeApp', 
-    'dbName': 'recipeApp'
+    'url' : 'mongodb+srv://minayachanely_db_user:CLDsQ2boHh8XdBOf@cluster0.nl8kwdp.mongodb.net/DigitalRecipe', 
+    'dbName': 'DigitalRecipe'
 };
 
 // // config/database.js
