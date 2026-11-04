@@ -1,9 +1,9 @@
-
+require('dotenv').config()
 // config/database.js
 module.exports = {
 
-    'url' : 'mongodb+srv://minayachanely_db_user:CLDsQ2boHh8XdBOf@cluster0.nl8kwdp.mongodb.net/DigitalRecipe', 
-    'dbName': 'DigitalRecipe'
+    url : process.env.MONGODB_URI,
+    dbName : process.env.DB_NAME,
 };
 
 // // config/database.js
