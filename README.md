@@ -1,4 +1,4 @@
-## Digital-Recipe-Book 📖
+## Digital-Recipe-Book 
 
 
 Digital-Recipe-Book is a web-based recipe management application that lets users create, organize, and manage their favorite recipes in one place. Users can add new recipes, browse existing ones, rate them, and delete recipes when needed. Users can sign up, log in and manage their personal recipe book from a private profile page.
